@@ -1,46 +1,53 @@
 <html>
-    <head>
-        <title>Current Competition</title>
-        <link rel="stylesheet" type="text/css" href=".css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    </head>
-    <body>
-            <div class="container-md">
-            <header>
-                <div class="row">
-                    <div class="col">
-                        <a class="navbar-brand" href="Home.html"><img src="images/logo.png" width="250px" alt="logo"></a>
+<head>
+    <title>Current Competition</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="homestyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    
+    <div class="row" id="header">
+            <div class="col">
+                <a class="navbar-brand" href="Home.html"><img src="images/logo.png" width="360px" alt="logo"></a>
+            </div>
+            <div class="col-3" id="fixedreg">
+                <p>ENTER!</p>
+                <br>
+                <p>The Month Competition has begun!
+                The submission deadline for entries is DD/MM/YYYY midnight 12 noon.
+                Click below to download this month's clip and start animating!</p>
+                <a href="Current Competition.html"><button id="registerbtn"> Register Now</button></a>
+                <br>
+            </div>
+        </div>
         
-                    </div>
-                    <div class="col">
-                        <p>ENTER!</p>
-                        <br>
-                        <p>The Month Competition has begun!
-                        The submission deadline for entries is DD/MM/YYYY midnight 12 noon.
-                        Click below to download this month's clip and start animating!</p>
-                        <a href="Current Competition.html"><button> Register Now</button></a>
-                        <br>
-                    </div>
-                </div>
-        
-                    <nav class="navbar navbar-expand-md bg-body-primary bg-dark border-bottom border-body" data-bs-theme="dark">
-                    <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav">
+        <nav class="navbar navbar-expand-lg bg-body-primary bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link"href="Home.html" class="active" >Home</a></li>
                         <li class="nav-item"><a  class="nav-link active" href="Current Competition.html">Current Competition</a></li>
                         <li class="nav-item"><a  class="nav-link" href="Archives.html">Archives</a></li>
                         <li class="nav-item"><a  class="nav-link" href="Forums.html">Forums</a></li>
-                        <li class="nav-item"><a  class="nav-link " href="Resources.html">Resources</a></li>
+                        <li class="nav-item"><a  class="nav-link" href="Resources.html">Resources</a></li>
                         <li class="nav-item"><a  class="nav-link" href="FAQ.html">FAQ</a></li>
                     </ul>
-                    </div>
-                    </nav>
-                    <br>
-                </header>
+                    <span class="navbar-text">
+                        Sign in 
+                    </span>
+                </div>
+            </div>
+        </nav>
+
+        <div id="content">
+        
         <div id="competition">
             <h3>OCTOBER COMPETITION </h3>
             <p>
@@ -144,6 +151,7 @@
             </table>
 
         </div>
+    </div>
         <div id="footer">
             <p>© 2016 Animation Competition. All Rights Reserved.</p>
         </div>
