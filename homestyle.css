@@ -1,8 +1,108 @@
+body{
+    overflow-x: hidden;
+}
+
 button
 {
     float: right;
 }
-#Entries
+
+#fixedreg
 {
-    align-items: center;
+    margin: 0 10% 15px 0;
+    padding: 5px 25px 5px 25px;
+    background-color: #E8DFD6;
+    box-shadow: 0px 5px 2px 5px #2f505f ;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 40px;
+}
+
+#header
+{
+    background-color: #7da0b3 ;
+    margin: 0px 0px;
+}
+
+#registerbtn
+{
+    margin: 0px 0px 15px 0px;
+    padding: 2px 25px 2px 25px;
+    background-color: #DDBEA7;
+    color: black;
+    border-radius: 12px;
+    border: 0px;
+}
+
+#registerbtn:hover
+{
+    background-color: #9cb3bd;
+}
+
+#content{
+    background-color: #9cb3bd  ;
+    padding: 15px 10px;
+}
+
+#picture_pickup{
+    transition: 0.3s;
+}
+#picture_pickup:hover{
+    transform: scale(1.2);
+}
+
+.clients { margin-bottom: 15px; }
+
+.clients-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2px;
+  margin: 0 ;
+  padding:0px 150px;
+  padding-bottom: 25px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 25px;
+}
+
+.clients-item {
+  min-width: 20%;
+  scroll-snap-align: start;
+  transition: 0.2s;
+}
+
+.clients-item img {
+  width: 200px;
+  filter: saturate(0.9);
+  transition: 0.2s;
+}
+
+.clients-item:hover { scale: 1.25; margin-top: 18px; margin-bottom: 20px;}
+
+li.clients-item::marker { display: none; color: transparent;}
+
+.has-scrollbar::-webkit-scrollbar {
+    width: 5px; /* for vertical scrollbar */
+    height: 5px; /* for horizontal scrollbar */
+}
+
+.has-scrollbar::-webkit-scrollbar-track {
+background: #e8dfd677;
+border-radius: 5px;
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb {
+background: #7da0b3;
+border-radius: 5px;
+}
+
+.has-scrollbar::-webkit-scrollbar-button { width: 20px; }
+
+#footer{
+    text-align: center;
+    background-color: #7da0b3;
 }
