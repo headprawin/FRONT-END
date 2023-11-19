@@ -86,12 +86,12 @@
         </div>
     </div>
         <div class="col">
-            <div id="Submit solo-form">
-                <h2>PLEASE PROVIDE YOUR ENTRY DETAILS:</h2>
-                <div class="tablesolo">
+            <hr>
+            <div id="Submit-form">
                     <form action="Current Competition.html" method="get">
                     <div class="row">
-                        <td>
+                        <div class="col contentleft">
+                        <h3>PLEASE PROVIDE YOUR ENTRY DETAILS:</h3>
                         Title :
                         <input type="text">(Max 50 Characters Allowed)<br>
                         Description :</br>
@@ -100,11 +100,15 @@
                         <input type="text">(Max 50 Characters Allowed)<br>
                         How long did it take you to animate this?:<br>
                         <input type="text">(Max 50 Characters Allowed)<br>
-                        Choose a thumbnail from your movie (must be a jpg) :<br>
+                        Choose a thumbnail from your movie (must be a jpg) :<br> 
+                        <label for="img">Select image:</label>
+                        <input type="file" id="img" name="img" accept="image/*">
                         Choose your movie file (must be less than 10 MB):<br>
-                        <input type="text">(Max 50 Characters Allowed)<br>
-                        </td>
-                        <td>ENTRY GUIDELINES
+                        <label for="img">Select video:</label>
+                        <input type="file" id="img" name="img" accept="image/*">
+                        <br>
+                        </div>
+                        <div class="col contentright">ENTRY GUIDELINES
     
                             Please upload your animation in .mp4, .mov, .avi, or .flv format, in widescreen 560x316 resolution, not Fullscreen.
                             
@@ -125,19 +129,13 @@
                             <br>
                             <input type="Checkbox">I agree to the Terms of Service<br>
                             <button href="Current Competition.html" id="registerbtn" >Submit</button>
-                        </td>
-                    </tr>
-                </form>
-            </table>   
+                        </div>
+                    </div>
+                </form>  
+            </div>
         </div>
-        </div>
-
-        <div id="audio">
-            <p>Download the sound file for this month's competition here: <a href="Sound File.mp3">Sound File</a></p>
-            <button>download</button>
-        </div>
-        </div>
-        </div>
+    </div>
+    </div>
         <div id="footer">
             <p>© 2016 Animation Competition. All Rights Reserved.</p>
         </div>

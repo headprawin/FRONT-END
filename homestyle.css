@@ -113,7 +113,7 @@ border-radius: 5px;
 
 .has-scrollbar::-webkit-scrollbar-button { width: 20px; }
 
-#solo-form, #team-form{
+#solo-form, #team-form {
     background-color: #E8DFD6;
     border-radius: 10px;
     padding: 10px 30px 0px 30px;
@@ -150,6 +150,16 @@ border-radius: 5px;
     align-content: center;
     justify-content: center;
     margin-top: 10vh;
+}
+.contentleft
+{
+background-color: #DDBEA7;
+padding: 15px;
+}
+.contentright
+{
+    padding: 15px;
+    background-color: #E8DFD6;
 }
 
 #page-scroll-links li a{
@@ -295,6 +305,15 @@ border-radius: 5px;
 {
     background-color: #DDBEA7;
 }
+
+/* FAQ */
+#faq
+{
+    background-color: #E8DFD6;
+    border-top-right-radius: 50px;
+}
+
+
 
 
 @media screen and (max-width: 900px) {
