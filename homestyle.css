@@ -141,6 +141,45 @@ border-radius: 5px;
     text-decoration: none;
 }
 
+#archives-navbar{
+    background-color: #DDBEA7!important;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;  
+    padding-left: 30px;
+}
+
+#Archives{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#ArchivesTitle{
+    margin: 0px 0px 15px 20px;
+}
+
+
+#searchtextbar{
+    height: 30px;
+    padding: 0px 10px;
+    margin-right: 20px;
+    border-radius: 15px;
+    border: 0px;
+    background-color: #E8DFD6;
+}
+
+#archives-content{
+    background-color: #E8DFD6;
+    padding: 10px 12px;
+    margin: 10px 0px 15px 0px;
+}
+
+#archives-content #content-row{
+    background-color: #DDBEA7;
+    align-items: center;
+    padding: 10px 10px;
+}
+
 #footer{
     text-align: center;
     background-color: #7da0b3;
