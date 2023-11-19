@@ -102,6 +102,11 @@ border-radius: 5px;
 
 .has-scrollbar::-webkit-scrollbar-button { width: 20px; }
 
+#page-scroll-links li a{
+    /* remove underline */
+    text-decoration: none;
+}
+
 #footer{
     text-align: center;
     background-color: #7da0b3;
