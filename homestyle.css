@@ -184,3 +184,25 @@ border-radius: 5px;
     text-align: center;
     background-color: #7da0b3;
 }
+#forumstable
+{
+    border: 3px solid black;
+}
+
+
+#forumstable td, th
+{
+    padding: 20px;
+    border: 2px dotted black;
+}
+.forumlink
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.forumlink:hover
+{
+    color:#E8DFD6;
+}
+
