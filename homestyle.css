@@ -9,7 +9,8 @@ button
 
 #fixedreg
 {
-    margin: 0 10% 15px 0;
+    max-width: 360px;
+    margin: 0 0% 15px 0;
     padding: 5px 25px 5px 25px;
     background-color: #E8DFD6;
     box-shadow: 0px 5px 2px 5px #2f505f ;
@@ -45,12 +46,6 @@ button
     padding: 15px 10px;
 }
 
-#picture_pickup{
-    transition: 0.3s;
-}
-#picture_pickup:hover{
-    transform: scale(1.2);
-}
 
 #Entries {
     background-color: #E8DFD6;
@@ -66,7 +61,7 @@ button
   justify-content: flex-start;
   align-items: flex-start;
   gap: 2px;
-  margin: 0 ;
+  margin: 0;
   padding:0px 150px;
   padding-bottom: 25px;
   overflow-x: auto;
@@ -77,18 +72,20 @@ button
 }
 
 .clients-item {
-  min-width: 20%;
   scroll-snap-align: start;
   transition: 0.2s;
+  margin: 0px 5px;
 }
 
 .clients-item img {
-  width: 200px;
+  width: 12vw;
   filter: saturate(0.9);
   transition: 0.2s;
 }
 
-.clients-item:hover { scale: 1.25; margin-top: 18px; margin-bottom: 20px;}
+.clients-item img:hover { width: 17vw; margin-bottom: 20px;}
+
+.clients-item:hover { margin-right: 30px;}
 
 li.clients-item::marker { display: none; color: transparent;}
 
@@ -206,3 +203,9 @@ border-radius: 5px;
     color:#E8DFD6;
 }
 
+
+@media screen and (max-width: 900px) {
+    .col-4{
+        width: 100%!important;
+    }
+}
