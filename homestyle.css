@@ -52,6 +52,13 @@ button
     transform: scale(1.2);
 }
 
+#Entries {
+    background-color: #E8DFD6;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0px 0px 15px 0px;
+}
+
 .clients { margin-bottom: 15px; }
 
 .clients-list {
@@ -101,6 +108,38 @@ border-radius: 5px;
 }
 
 .has-scrollbar::-webkit-scrollbar-button { width: 20px; }
+
+#solo-form, #team-form{
+    background-color: #E8DFD6;
+    border-radius: 10px;
+}
+
+#team-form{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+#solo-form Table tr td, #team-form Table tr td{
+    padding: 5px 15px;
+}
+
+#solo-form Table tr td input[type="text"], #team-form Table tr td input[type="text"]{
+    width: 230px;
+    height: 30px;
+    padding: 0px 10px;
+    border-radius: 15px;
+    border: 0px;
+    background-color: #DDBEA7;
+}
+
+#solo-form Table tr td input[type="radio"]{
+    accent-color: #DDBEA7;
+}
+
+#page-scroll-links li a{
+    /* remove underline */
+    text-decoration: none;
+}
 
 #footer{
     text-align: center;
