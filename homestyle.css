@@ -116,6 +116,8 @@ border-radius: 5px;
 #solo-form, #team-form{
     background-color: #E8DFD6;
     border-radius: 10px;
+    padding: 10px 30px 0px 30px;
+    margin: 30px;
 }
 
 #team-form{
@@ -127,9 +129,9 @@ border-radius: 5px;
     padding: 5px 15px;
 }
 
-#solo-form Table tr td input[type="text"], #team-form Table tr td input[type="text"]{
+#solo-form div input[type="text"], #team-form div input[type="text"], td input[type="text"], input[type="password"]{
     width: 230px;
-    height: 30px;
+    height: 20px;
     padding: 0px 10px;
     border-radius: 15px;
     border: 0px;
@@ -138,6 +140,16 @@ border-radius: 5px;
 
 #solo-form Table tr td input[type="radio"]{
     accent-color: #DDBEA7;
+}
+
+#audiodiv {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-top: 10vh;
 }
 
 #page-scroll-links li a{
@@ -207,9 +219,61 @@ border-radius: 5px;
     color:#E8DFD6;
 }
 
+#login-body{
+    height: 100vh;
+    display: grid;
+    /* padding-top: 100px; */
+    justify-items: stretch;
+    align-content: center;
+}
+
+#login{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#headerrow{
+    background-color: #E8DFD6;
+}
+
+#contentrow{
+    background-color: #DDBEA7;
+}
+
+#forums-navbar {
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #DDBEA7!important;
+}
+
+#forum-navbar-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding-right: 30px;
+}
+
+#forum-navbar-links a {
+    text-decoration: underline;
+    color: #00446A;
+    font-weight: bold;
+}
 
 @media screen and (max-width: 900px) {
     .col-4{
         width: 100%!important;
+    }
+    #audiodiv{
+        margin-top: 10px;
     }
 }
