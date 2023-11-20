@@ -39,14 +39,16 @@ button
 #fixedreg
 {
     max-width: 360px;
-    margin: 0 0% 15px 0;
+    margin: 0 0% 15px 30px;
     padding: 5px 25px 5px 25px;
     background-color: #E8DFD6;
     box-shadow: 0px 5px 2px 5px #2f505f ;
+    border-top: 5px solid #2f505f ;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 40px;
+    transform: translate(0px, -5px);
 }
 /* homepage */
 #winner
@@ -187,7 +189,7 @@ padding: 15px;
 }
 
 
-#searchtextbar{
+#searchtextbar, #Submit-form div input[type="text"]{
     height: 30px;
     padding: 0px 10px;
     margin-right: 20px;
@@ -244,7 +246,9 @@ padding: 15px;
     justify-content: center;
     flex-wrap: wrap;
 }
-
+.login-row{
+    flex-direction: row;
+}
 #headerrow{
     background-color: #E8DFD6;
 }
@@ -273,19 +277,27 @@ padding: 15px;
     padding-right: 30px;
 }
 
-#forum-navbar-links a {
-    text-decoration: underline;
+#forum-navbar-links a, .Rmenubar a {
+    text-decoration: none;
     color: #00446A;
     font-weight: bold;
 }
+
+#forum-navbar-links a:hover, .Rmenubar a:hover {
+    text-decoration: underline;
+}
+
 /* Resources */
 .Rmenubar
 {
     background-color: #E8DFD6;
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
-
-
+    padding: 20px;
+}
+#content .subcontent .Rmenubar{
+    margin-left: 0px!important;
+    margin-right: 0px;
 }
 .subcontent
 {
@@ -304,6 +316,12 @@ padding: 15px;
 .Rigs, .winner, .workshop, .course
 {
     background-color: #DDBEA7;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.Rigs .row{
+    padding: 10px 0px;
 }
 
 /* FAQ */
@@ -313,7 +331,11 @@ padding: 15px;
     border-top-right-radius: 50px;
 }
 
-
+@media screen and (max-width: 1040px) {
+    .login-row{
+        flex-direction: column;
+    }
+}
 
 
 @media screen and (max-width: 900px) {
@@ -322,5 +344,8 @@ padding: 15px;
     }
     #audiodiv{
         margin-top: 10px;
+    }
+    .login-row{
+        flex-direction: column;
     }
 }
