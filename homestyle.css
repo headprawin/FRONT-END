@@ -287,6 +287,10 @@ padding: 15px;
 
 
 }
+#content .subcontent .Rmenubar{
+    margin-left: 0px!important;
+    margin-right: 0px;
+}
 .subcontent
 {
     margin: 30px;
