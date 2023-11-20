@@ -10,38 +10,50 @@
 </head>
 
 
-<body class="container-fluid">
-
-	<div id="login-body">
-		<div id="login container-md">
-			<div class="row login-row">
-			<div class="col-2"></div>
-			<div class="col" id="logo" style="background-color: #E8DFD6">
-				<img src="images/logo2.png" style="width:340px; margin-left: 40px">
+<body class="container-fluid" style="background-color: #aacad7;">
+	<div class="content" id="login-body">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-6">
+			  <img src="images/logo.png" alt="Image" class="img-fluid" width="550px">
 			</div>
-			<div class="col" id="content">
-				<h1> Login </h1>
-				<h2> to enter the page </h2>
-				<table class="table">
-					<form  action="Home.html" method="get">
-						<tr>
-							<td>Name:</td>
-							<td><input type="text"></td>
-						</tr>
-						<br>
-						<td>Password:</td>
-						<td><input type="password" name="password" id="password"> <i class="fa fa-eye-slash" id="togglePassword"></i></td>
-					</tr>
-					<td colspan="2"><input type="submit" value="Login" id="registerbtn" style="margin-bottom: 0px"/></td>
+			<div class="col-md-6 contents">
+			  <div class="row justify-content-center">
+				<div class="col-md-8"  style="background-color: aliceblue;">
+				  <div class="mb-4">
+				  <h3>Sign In</h3>	
+				  <p class="mb-4">Welcome back !</p>
+				</div>
+				<form action="#" method="post">
+				  <div class="form-group first">
+					<label for="username">Username</label><br>
+					<input type="text" id="username">
+					
+				  </div>
+				  <div class="form-group last mb-4">
+					<label for="password">Password</label><br>
+					<input type="password" id="password"> <i class="fa fa-eye" id="togglePassword"></i>
+				  </div>
+				  
+				  <div class="d-flex mb-5 align-items-center">
+					<label class="control control--checkbox mb-0"><span class="caption">Remember me</span>
+					  <input type="checkbox" checked="checked"/>
+					  <div class="control__indicator"></div>
+					</label>
+				  </div>
+	
+				  <input type="submit" value="Log In" id="registerbtn">
 				</form>
-			</table>
-			<br>
-			if you've did created a account here,<a href="Sign Up Page.html"><i>sign up</i></a>
+				<p>Don't have an account? <a href="Sign Up Page.html">Sign up</a></p>
+				</div>
+			  </div>
+			  
+			</div>
+			
+		  </div>
 		</div>
-		<div class="col-2"></div>
-		</div>
-	</div>
-	</div>
+	  </div>
+	
 	<script>
         const togglePassword = document.querySelector("#togglePassword");
         const password = document.querySelector("#password");

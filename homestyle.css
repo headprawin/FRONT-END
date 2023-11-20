@@ -131,7 +131,7 @@ border-radius: 5px;
     padding: 5px 15px;
 }
 
-#solo-form div input[type="text"], #team-form div input[type="text"], td input[type="text"], input[type="password"]{
+#solo-form div input[type="text"], #team-form div input[type="text"], input[type="text"], input[type="password"]{
     width: 230px;
     height: 20px;
     padding: 0px 10px;
@@ -156,12 +156,16 @@ border-radius: 5px;
 .contentleft
 {
 background-color: #DDBEA7;
-padding: 15px;
+padding: 35px;
+border-bottom-left-radius:60px;
+border-top-left-radius:60px;
 }
 .contentright
 {
-    padding: 15px;
+    padding: 35px;
     background-color: #E8DFD6;
+    border-bottom-right-radius: 60px;
+    border-top-right-radius:60px;
 }
 
 #page-scroll-links li a{
